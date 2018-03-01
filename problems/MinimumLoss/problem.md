@@ -2,7 +2,7 @@
 
 ---
 
-Lauren has a chart of distinct projected prices for a house over the next __*n*__ years, where the price of the house in the __*i<sup>th</sup>*__ year is __*p<sub>i</sub>*__. She wants to purachse and resell the house at a minimal *loss* according to the following rules:
+Lauren has a chart of distinct projected prices for a house over the next __*n*__ years, where the price of the house in the __*i<sup>th</sup>*__ year is __*p<sub>i</sub>*__. She wants to purchase and resell the house at a minimal *loss* according to the following rules:
 
 * The house cannot be sold at a price greater than or equal to the price it was purchased at (i.e., it must be resold at a loss).
 * The house cannot be resold within the same year it was purchased.
