@@ -68,7 +68,7 @@ the pattern is filled in and spaces where it is not.
 * *     * *
 ```
 
-##Explanation
+## Explanation
 
 The first **11** lines of Sir Pinski's triangle have been printed according to
 the pattern described.
