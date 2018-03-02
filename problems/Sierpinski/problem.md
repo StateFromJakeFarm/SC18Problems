@@ -70,10 +70,6 @@ the pattern is filled in and spaces where it is not.
 
 ##Explanation
 
-The output can be computed row-by-row by starting with a single filled cell
-at the left of the first row and setting each cell in a row to the XOR of the
-cell above it and the cell to the above-left of it. The first cell in a row
-is always filled. Following this pattern will generate Sierpinski's triangle.
+The first **11** lines of Sir Pinski's triangle have been printed according to
+the pattern described.
 
-This type of computation is known as a cellular automaton. The automaton which
-generates the Sierpinski's triangle is known as Rule 90.
