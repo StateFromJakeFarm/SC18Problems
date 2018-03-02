@@ -15,7 +15,7 @@ int main() {
         current[i] = next[i] = false;
     }
 
-    for (int i = 0; i < rows; ++i) {
+    for (int i = 1; i <= rows; ++i) {
         std::cout << '*';
         for (int j = 1; j <= i; ++j) {
             std::cout << (current[j] ? '*' : ' ');
