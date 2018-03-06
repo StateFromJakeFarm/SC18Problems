@@ -1,0 +1,2 @@
+This problem is based on HackerRank's problem "Lily's Homework"
+https://www.hackerrank.com/challenges/lilys-homework/problem
