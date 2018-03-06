@@ -1,0 +1,2 @@
+This problem is based on HackerRank's problem "Minimum Loss"
+https://www.hackerrank.com/challenges/minimum-loss/problem
