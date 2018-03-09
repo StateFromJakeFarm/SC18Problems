@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define MAXSIZE 64
+#define MAXSIZE 65
 
 int main() {
     bool a[MAXSIZE], b[MAXSIZE];
