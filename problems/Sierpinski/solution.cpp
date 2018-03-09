@@ -1,6 +1,6 @@
 #include <iostream>
 
-#define MAXSIZE 65
+#define MAXSIZE 64
 
 int main() {
     bool a[MAXSIZE], b[MAXSIZE];
@@ -16,9 +16,10 @@ int main() {
     }
 
     for (int i = 1; i <= rows; ++i) {
-        std::cout << '*';
-        for (int j = 1; j <= i; ++j) {
+        for (int j = 0; j < i; ++j) {
             std::cout << (current[j] ? '*' : ' ');
+        }
+        for (int j = 1; j <= i && j < MAXSIZE; ++j) {
             next[j] = current[j] ^ current[j - 1];
         }
         std::cout << '\n';
