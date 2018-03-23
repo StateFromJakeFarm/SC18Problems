@@ -1,0 +1,2 @@
+This problem is based on HackerRank's problem "Non-Divisible Subset"
+https://www.hackerrank.com/challenges/non-divisible-subset/problem
