@@ -23,31 +23,50 @@ All corridors are two-way with an equal cost in both directions. No two parks wi
 
 ## Constraints
 
-**TODO**
-
 1 ≤ **N** ≤ 64  
-1 ≤ **M** ≤ 64
+0 ≤ **M** ≤ 64
+1 ≤ each edge cost ≤ 12
 
 ## Output Format
 
-The output should consist of two integers:
+The output should consist of three integers:
 
 * The number of the park to deploy at to save the most bears.
 * The maximum number of bears that can be saved by deploying at that park.
+* The number of bears that cannot be saved.
+
+If two different deployment points could save the most bears, print the lowest park number.
 
 ## Sample Input
 
 ```
-...
+4 4
+7 5 9 7
+1 2 1
+2 3 4
+3 4 6
+4 1 2
 ```
 
 ## Sample Output
 
 ```
-...
+4 16 12
 ```
 
-##Explanation
+## Explanation
 
-Ebrbrbr
+The input represents the following graph:
+
+```
+(1) [7]--1--[5] (2)
+     |       |
+     2       4
+     |       |
+(4) [7]--6--[9] (3)
+```
+
+There are 7 + 5 + 7 + 9 = 28 total bears. The optimal bear recovery path is `[7]--2->[7]--1->[5]--4->[9]`, which will save 7 bears at the deployment park, then 5 bears (7 - 2), then 2 bears (5 - 2 - 1), then 2 bears (9 - 2 - 1 - 4), for a total of 7 + 5 + 2 + 2 = 16 bears saved.
+
+The deployment park of the best path is park 4, saving 16 bears from a total of 28, so the output is `4 16 12`.
 

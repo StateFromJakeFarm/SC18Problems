@@ -51,10 +51,12 @@ int main() {
     cin >> num_nodes >> num_edges;
 
     int crisis_duration = 0;
+    int all_bears = 0;
     vector<Node> nodes(num_nodes);
     for (auto& node : nodes) {
         cin >> node.bears;
         crisis_duration = max(crisis_duration, node.bears);
+        all_bears += node.bears;
     }
 
     for (int i = 0; i < num_edges; ++i) {
@@ -75,6 +77,6 @@ int main() {
     }
 
     // Output
-    cout << (best + 1) << " " << best_val << endl;
+    cout << (best + 1) << " " << best_val << " " << (all_bears - best_val) << endl;
 }
 
