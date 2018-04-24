@@ -30,7 +30,10 @@ All corridors are two-way with an equal cost in both directions. No two parks wi
 
 ## Output Format
 
-Ebprpl
+The output should consist of two integers:
+
+* The number of the park to deploy at to save the most bears.
+* The maximum number of bears that can be saved by deploying at that park.
 
 ## Sample Input
 
