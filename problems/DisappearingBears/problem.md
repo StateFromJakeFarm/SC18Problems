@@ -15,9 +15,9 @@ The second line consists of **N** integers, the number of bears initially in eac
 
 The remaining **M** lines consist of three integers each:
 
-* The first park connected by the corridor.
-* The second park connected by the corridor.
-* The number of hours **H_i** it will take to traverse that corridor.
+* The first park **u_i** connected by the corridor.
+* The second park **v_i** connected by the corridor.
+* The number of hours **t_i** it will take to traverse that corridor.
 
 All corridors are two-way with an equal cost in both directions. No two parks will have multiple corridors directly between them.
 
@@ -25,7 +25,7 @@ All corridors are two-way with an equal cost in both directions. No two parks wi
 
 1 ≤ **N** ≤ 64  
 0 ≤ **M** ≤ 64  
-1 ≤ **H_i** ≤ 12
+1 ≤ **t_i** ≤ 12
 
 ## Output Format
 
