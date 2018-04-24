@@ -17,15 +17,15 @@ The remaining **M** lines consist of three integers each:
 
 * The first park connected by the corridor.
 * The second park connected by the corridor.
-* The number of hours it will take to traverse that corridor.
+* The number of hours **H_i** it will take to traverse that corridor.
 
 All corridors are two-way with an equal cost in both directions. No two parks will have multiple corridors directly between them.
 
 ## Constraints
 
 1 ≤ **N** ≤ 64  
-0 ≤ **M** ≤ 64
-1 ≤ each edge cost ≤ 12
+0 ≤ **M** ≤ 64  
+1 ≤ **H_i** ≤ 12
 
 ## Output Format
 
@@ -35,7 +35,7 @@ The output should consist of three integers:
 * The maximum number of bears that can be saved by deploying at that park.
 * The number of bears that cannot be saved.
 
-If two different deployment points could save the most bears, print the lowest park number.
+If two different deployment points could save the most bears, print the one with the lowest number.
 
 ## Sample Input
 
@@ -66,7 +66,7 @@ The input represents the following graph:
 (4) [7]--6--[9] (3)
 ```
 
-There are 7 + 5 + 7 + 9 = 28 total bears. The optimal bear recovery path is `[7]--2->[7]--1->[5]--4->[9]`, which will save 7 bears at the deployment park, then 5 bears (7 - 2), then 2 bears (5 - 2 - 1), then 2 bears (9 - 2 - 1 - 4), for a total of 7 + 5 + 2 + 2 = 16 bears saved.
+There are 7 + 5 + 7 + 9 = **28** total bears. The optimal bear recovery path is `[7]--2->[7]--1->[5]--4->[9]`, which will save 7 bears at the deployment park, then 5 bears (7 - 2), then 2 bears (5 - 2 - 1), then 2 bears (9 - 2 - 1 - 4), for a total of 7 + 5 + 2 + 2 = **16** bears saved.
 
 The deployment park of the best path is park 4, saving 16 bears from a total of 28, so the output is `4 16 12`.
 
