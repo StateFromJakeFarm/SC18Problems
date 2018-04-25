@@ -1,0 +1,2 @@
+This problem is based on the HackerRank problem "Kingdom Division"
+https://www.hackerrank.com/challenges/kingdom-division/problem
