@@ -1,0 +1,2 @@
+This problem is based on the HackerRank problem "Counting Valleys"
+https://www.hackerrank.com/challenges/counting-valleys/problem
