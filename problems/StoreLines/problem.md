@@ -2,42 +2,40 @@
 
 ---
 
-You're at a store on a quiet day and observe that none of the cashiers have any customers.
+Alice is at the store when she notices that none of the cashiers have any customers.
 
-Suddenly a group of **N** customers finish shopping and form a single line. These customers can be numbered 1,2,3,...,N with the first in line being customer 1, and the last in line being customer N. The store has **K** cashiers, also numbered 1,2,3,...,K each who can handle one customer at a time.
+Suddenly a group of __*N*__ customers finish shopping and form a line. The store has __*K*__ cashiers, each of whom can handle only one customer at a time.
 
-However, the speed of each cashier varies, each cashier takes **S<sub>i</sub>** minutes per customer. Regardless of what the customer is buying, cashier **i** (1 ≤ **i** ≤ **K**) will take **S<sub>i</sub>** minutes to finish with the customer. 
+However, the speed of each cashier varies, each cashier takes __*S<sub>k</sub>*__ minutes per customer, regardless of what the customer is buying.
 
-Because the cashiers don't all work at the same speed, the order the customers leave in won't necessarily be the same order they formed the line in. You're curious about the order the customers leave in. 
+Alice notices that the cashiers don't work at the same speed, and gets curious about what order the customers will leave in.
 
-The first customer in line simply goes to cashier 1, the second person in line to cashier 2, and so on. When a cashier finishes with a customer, that customer leaves immediately and the next person in line immediately moves to the now free cashier. _Customers do not wait in line if there is an available cashier, even if doing so would save them time._ If two or more cashiers would finish with their respective customers at the same time, assume that the customers finish in the same order they arrived in. 
+When the line first forms, the first customer goes to cashier 1, the second to cashier 2, and so on. From then on, the customer at the front of the line simply moves to a cashier as one becomes availible. If two or more customers would finish at the same time, assume they finish in the same order they arrived in.
 
-Given **N**, the number of customers, **K**, the number of cashiers, and the value **S<sub>i</sub>** for each cashier, find the order that the customers will leave in. 
+Given __*N*__, the number of customers, __*K*__, the number of cashiers, and the time it takes for each cashier to finish, __*S<sub>k</sub>*__, find the order that the customers will leave in. 
 
 
 ##Input Format
 
-The first line contains a single integer **N** denoting the number of customers.
+The first line contains a single integer __*N*__ denoting the number of customers.
 
-The second line contains a single integer **K** denoting the number of cashiers.
+The second line contains a single integer __*K*__ denoting the number of cashiers.
 
-The third line contains **K** space-separated integers, denoting the time it takes each cashier to handle one customer. (i.e. **S<sub>1</sub>,S<sub>2</sub>,...,S<sub>K</sub>**)
+The third line contains __*K*__ space-separated integers, denoting the time it takes each cashier to handle one customer. (i.e. __*S<sub>1</sub>,S<sub>2</sub>,...,S<sub>K</sub>*__)
 
 ##Constraints
 
-5 ≤ **N** ≤ 10,000
+5 ≤ __*N*__ ≤ 10,000
 
-2 ≤ **K** ≤ 100
+2 ≤ __*K*__ ≤ 100
 
-1 ≤ **S<sub>i</sub>** ≤ 200
+1 ≤ __*S<sub>k</sub>*__ ≤ 200
 
 ##Output Format
 
-Print **K** integers seperated by spaces. Each integer represents the order the customers were in in the orginal line. The integers should be output in the order they leave the store in. 
+Print __*K*__ integers seperated by spaces. Each integer represents the position that a person was in from the original line, and they should be printed in the order the customers leave in.
 
-After all the customer numbers have been output, print a newline to denote the end. 
-
-##Sample Input
+###Sample Input
 
 ```
 7
@@ -45,13 +43,13 @@ After all the customer numbers have been output, print a newline to denote the e
 4 2 7
 ```
 
-##Sample Output
+###Sample Output
 
 ```
 2 1 4 6 3 5 7
 ```
 
-##Explanation
+###Explanation
 
 There are seven customers and three cashiers. The first three customers pair off with their respective cashiers.
 

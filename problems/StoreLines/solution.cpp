@@ -1,81 +1,60 @@
-/*
- * solution.cpp
- * Jonathan Jones
- */
+#include <bits/stdc++.h>
 
-#include <iostream>
-#include <climits>
-#include <string>
-#include <sstream>
+using namespace std;
 
-struct Cashier
+class Cashier
 {
+ public:
   int customerNumber;
   int checkoutSpeed;
   int timeOfNextCheckout;
 };
+class Compare
+{
+ public:
+  bool operator() (Cashier a, Cashier b)
+  {
+    if(a.timeOfNextCheckout == b.timeOfNextCheckout)
+    {
+      return a.customerNumber > b.customerNumber;
+    }
+    return a.timeOfNextCheckout > b.timeOfNextCheckout;
+  }
+};
 
 int main()
 {
+  priority_queue<Cashier, vector<Cashier>, Compare> minQ;
   int numberOfCustomers;
   int numberOfCashiers;
-  int currentCustomer = 1;
-
-  std::cin >> numberOfCustomers;
-  std::cin >> numberOfCashiers;
- 
-  Cashier * A = new Cashier[numberOfCashiers];
+  int customerNumber = 1;
+  Cashier c;
+  cin >> numberOfCustomers >> numberOfCashiers;
   for(int i = 0; i < numberOfCashiers; i++)
   {
-    std::cin >> A[i].checkoutSpeed;
-    if(currentCustomer <= numberOfCustomers)
+    if(customerNumber <= numberOfCustomers)
     {
-      A[i].customerNumber = currentCustomer;
-      currentCustomer++;
-      A[i].timeOfNextCheckout = A[i].checkoutSpeed;
-    }
-    else
-    {
-      A[i].customerNumber = -1;
-      A[i].timeOfNextCheckout = INT_MAX;
+      c = Cashier();
+      c.customerNumber = customerNumber++;
+      cin >> c.checkoutSpeed;
+      c.timeOfNextCheckout = c.checkoutSpeed;
+      minQ.push(c);
     }
   }
-  
-  Cashier * nextToFinish;
-  std::stringstream outputBuffer;
-  while(true)
+  stringstream output;
+  while(!minQ.empty())
   {
-    nextToFinish = &A[0];
-    for(int i = 1; i < numberOfCashiers; i++)
+    c = minQ.top();
+    minQ.pop();
+    output << c.customerNumber << " ";
+    if(customerNumber <= numberOfCustomers)
     {
-      if(A[i].timeOfNextCheckout < nextToFinish->timeOfNextCheckout)
-      {
-        nextToFinish = &A[i];
-      }
-      else if(A[i].timeOfNextCheckout == nextToFinish->timeOfNextCheckout &&
-                A[i].customerNumber < nextToFinish->customerNumber)
-      {
-        nextToFinish = &A[i];
-      }
-    }
-    if(nextToFinish->timeOfNextCheckout == INT_MAX)
-    {
-      break;
-    }
-    outputBuffer << nextToFinish->customerNumber << " ";
-    if(currentCustomer <= numberOfCustomers)
-    {
-      nextToFinish->customerNumber = currentCustomer;
-      currentCustomer++;
-      nextToFinish->timeOfNextCheckout += nextToFinish->checkoutSpeed;
-    }
-    else
-    {
-      nextToFinish->customerNumber = -1;
-      nextToFinish->timeOfNextCheckout = INT_MAX;
+      c.customerNumber = customerNumber++;
+      c.timeOfNextCheckout += c.checkoutSpeed;
+      minQ.push(c);
     }
   }
-  std::string output = outputBuffer.str();
-  std::cout << output.substr(0, output.size() - 1) << std::endl;
-
+  string out = output.str();
+  cout << out.substr(0, out.size() - 1) << endl;
+  return 0;
 }
