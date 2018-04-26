@@ -6,7 +6,7 @@ King Arthur has a large kingdom that can be represented as a tree, where nodes c
 
 The King wants to divide his kingdom between his two children Reggie and Betty, by giving each of them 0 or more cities; however, they don't get along so he must divide the kingdom in such a way that they will not invade each other's cities. The first sibling will invade the second sibling's city if the second sibling has no other cities directly connected to it. For example, consider the kingdom configurations below.
 
-![](imageOne.png)
+![](KingdomDiagram.png)
 
 Given a map of the kingdom's __*n*__ cities, find and print the number of ways King Arthur can divide it between his two children such that they will not invade each other. __The result can be quite large, so give the answer modulo 10<sup>9</sup> + 7.__
 
@@ -42,7 +42,8 @@ Print the number of ways to divide the kingdom such that the siblings will not i
 
 ###Explanation
 
-In the diagrams below, red cities are ruled by Betty and blue cities are ruled by Reggie. These diagrams show the four valid ways to divide the kingdom peacefully.
-![](imageTwo.png)
+In the diagrams below, square-shaped cities are ruled by Betty and cicurlar cities are ruled by Reggie. These diagrams show the four valid ways to divide the kingdom peacefully.
+
+![](ExplanationDiagram.png)
 
 We then print the value of 4 mod (10<sup>9</sup> + 7) = 4 as our answer.
