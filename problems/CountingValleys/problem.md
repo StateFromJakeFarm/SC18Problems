@@ -1,4 +1,4 @@
-#Counting Valleys
+# Counting Valleys
 
 ---
 
@@ -9,33 +9,33 @@ Gary is a avid hiker. He tracks his hikes meticulously, paying attention to the 
 
 Given Gary's sequence of steps during his last hike, find the number of valleys he traveled through. 
 
-##Input Format
+## Input Format
 
 The first line contains a single integer __*n*__, the number of steps in Gary's hike.
 
 The second line contains a single string __*s*__, of n characters describing his hike.
 
-##Constraints
+## Constraints
 
 - 2 ≤ __*n*__ ≤ 10<sup>6</sup>
 - Every character in the string __*s*__ is either 'U' or 'D'
 
-##Output Format
+## Output Format
 
 Print a single integer denoting the number of valleys Gary walked through during his hike.
 
-###Sample Input
+## Sample Input
 ```
 8
 UDDDUDUU
 ```
 
-###Sample Output
+## Sample Output
 ```
 1
 ```
 
-###Explanation
+## Explanation
 
 If we represent _ as sea level, a step up as / and a step down as \, Gary's hike can be drawn as
 ```
@@ -44,4 +44,5 @@ _/\      _
    \    /
     \/\/
 ```
+
 We can see that he enters and leaves one valley.

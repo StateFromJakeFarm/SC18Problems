@@ -1,4 +1,6 @@
-#Mandragora Forest
+# Mandragora Forest
+
+---
 
 The evil forest is guarded by vicious mandragoras. Each mandragora has health points (**1** <= **_i_** <= **_N_**).
 
@@ -9,34 +11,32 @@ Garnet and her pet begin their journey through the evil forest with **_S_** = **
 
 Each mandragora can only be defeated once, and Garnet can defeat the mandragoras in any order. Given the respective health points for each mandragora, can you find the maximum number of experience points she can earn from defeating all **_N_** mandragoras?
 
-###Input Format
+## Input Format
 
 The first line contains an integer, **_T_**, denoting the number of test cases. Each test case is described over two lines:
 
 1. The first line contains a single integer, **_N_**, denoting the number of mandragoras in the forest.
 2. The second line contains **_N_** space-separated integers describing the respective health points for the mandragoras (i.e., **_H[1]_**, **_H[2]_**,..., **_H[N]_**).
 
-###Constraints
+## Constraints
 
-* **1** <= **_T_** <= **10^5**
-* **1** <= **_N_** <= **10^5**
-* **1** <= **_H[i]_** <= **10^7**, where **1** <= **_i_** <= **_N_**
-* The sum of all **_N_**s in a single test case is <= **10^6**
+* **1** <= **_T_** <= **10<sup>5</sup>**
+* **1** <= **_N_** <= **10<sup>5</sup>**
+* **1** <= **_H[i]_** <= **10<sup>7</sup>**, where **1** <= **_i_** <= **_N_**
+* The sum of all ***N***[]()s in a single test case is <= **10<sup>6</sup>**
 
-###Output Format
+## Output Format
 
 For each test case, print a single line with an integer denoting the maximum number of experience points that Garnet can earn.
 
-###Sample Input
-<code>
-<pre>
+## Sample Input
+```
 1
 3
 3 2 2
-<pre>
-</code>
+```
 
-###Sample Output
-<code>
+## Sample Output
+```
 10
-</code>
+```

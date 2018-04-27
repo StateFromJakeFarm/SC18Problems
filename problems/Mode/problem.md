@@ -1,4 +1,4 @@
-#Mode
+# Mode
 
 ---
 
@@ -6,29 +6,30 @@ Given a array __*S*__ containing __*n*__ elements, find the mode of the array. (
 
 If the set has multiple modes, output the one with the smallest value.
 
-##Input Format
+## Input Format
 
 The first line contains an integer __*n*__, the number of values in the array.
 
 The second line contains __*n*__ space-seperated integers describing the values of the elements of the array, __*S<sub>0</sub>, S<sub>1</sub>,...,S<sub>n - 1</sub>*__
 
-##Constraints
+## Constraints
 
 - 1 ≤  __*n*__ ≤ 10<sup>5</sup>
 - 1 ≤ __*S<sub>i</sub>*__ ≤ 10<sup>3</sup>
 
-##Output Format
+## Output Format
 
 Print a single integer denoting the value that occurs most frequently in the array. If two values are tied for most frequent occurance, print the one with the lower value.
 
-###Sample Input
+## Sample Input
 ```
 5
 5 10 9 5 1
 ```
-###Sample Output
+### Sample Output
 ```
 5
 ```
-###Explanation
+
+### Explanation
 All values in the array occur only once, except for 5, which occurs twice.

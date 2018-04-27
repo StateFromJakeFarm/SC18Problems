@@ -1,4 +1,4 @@
-#Kingdom Division
+# Kingdom Division
 
 ---
 
@@ -10,23 +10,23 @@ The King wants to divide his kingdom between his two children Reggie and Betty, 
 
 Given a map of the kingdom's __*n*__ cities, find and print the number of ways King Arthur can divide it between his two children such that they will not invade each other. __The result can be quite large, so give the answer modulo 10<sup>9</sup> + 7.__
 
-##Input Format
+## Input Format
 
 The first line contains a single integer denoting __*n*__, the number of cities in the kingdom.
 
 Each of the __*n*__ - 1 subsequent lines contain two space-separated integers, __*u*__ and __*v*__, describing a road connecting cities.
 
-##Constraints
+## Constraints
 
 - 2 ≤ __*n*__ ≤ 10<sup>5</sup>
 - 1 ≤ __*u, v*__ ≤ __*n*__
 - It is guaranteed that all cities are connected.
 
-##Output Format
+## Output Format
 
 Print the number of ways to divide the kingdom such that the siblings will not invade each other, modulo 10<sup>9</sup> + 7
 
-###Sample Input
+## Sample Input
 ```
 5
 1 2
@@ -35,12 +35,12 @@ Print the number of ways to divide the kingdom such that the siblings will not i
 3 5
 ```
 
-###Sample Output
+## Sample Output
 ```
 4
 ```
 
-###Explanation
+## Explanation
 
 In the diagrams below, square-shaped cities are ruled by Betty and cicurlar cities are ruled by Reggie. These diagrams show the four valid ways to divide the kingdom peacefully.
 

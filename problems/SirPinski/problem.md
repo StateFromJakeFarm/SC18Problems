@@ -30,7 +30,7 @@ Then placing two copies of the shape so far below its bottom corners:
 Then repeating the process, each time placing two more copies of the shape so
 far below its two bottom corners. Dan would like to develop an algorithm for
 the cutting-edge Water-Mill Computational Device to prove to Sir Pinski that
-his triangle has merit.
+his triangle is of mathematical interest.
 
 ## Input Format
 
@@ -52,7 +52,7 @@ the pattern is filled in and spaces where it is not.
 11
 ```
 
-## Sample Output
+### Sample Output
 
 ```
 *
@@ -68,7 +68,7 @@ the pattern is filled in and spaces where it is not.
 * *     * *
 ```
 
-## Explanation
+### Explanation
 
 The first **11** lines of Sir Pinski's triangle have been printed according to
 the pattern described.

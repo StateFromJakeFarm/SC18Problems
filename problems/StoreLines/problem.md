@@ -1,4 +1,4 @@
-#Store Lines
+# Store Lines
 
 ---
 
@@ -15,7 +15,7 @@ When the line first forms, the first customer goes to cashier 1, the second to c
 Given __*N*__, the number of customers, __*K*__, the number of cashiers, and the time it takes for each cashier to finish, __*S<sub>k</sub>*__, find the order that the customers will leave in. 
 
 
-##Input Format
+## Input Format
 
 The first line contains a single integer __*N*__ denoting the number of customers.
 
@@ -23,7 +23,7 @@ The second line contains a single integer __*K*__ denoting the number of cashier
 
 The third line contains __*K*__ space-separated integers, denoting the time it takes each cashier to handle one customer. (i.e. __*S<sub>1</sub>,S<sub>2</sub>,...,S<sub>K</sub>*__)
 
-##Constraints
+## Constraints
 
 5 ≤ __*N*__ ≤ 10,000
 
@@ -31,11 +31,11 @@ The third line contains __*K*__ space-separated integers, denoting the time it t
 
 1 ≤ __*S<sub>k</sub>*__ ≤ 200
 
-##Output Format
+## Output Format
 
 Print __*K*__ integers seperated by spaces. Each integer represents the position that a person was in from the original line, and they should be printed in the order the customers leave in.
 
-###Sample Input
+## Sample Input
 
 ```
 7
@@ -43,13 +43,13 @@ Print __*K*__ integers seperated by spaces. Each integer represents the position
 4 2 7
 ```
 
-###Sample Output
+### Sample Output
 
 ```
 2 1 4 6 3 5 7
 ```
 
-###Explanation
+### Explanation
 
 There are seven customers and three cashiers. The first three customers pair off with their respective cashiers.
 

@@ -2,7 +2,9 @@
 
 ---
 
-Bear-stealing shock troops have begun pouring through wormholes in major parks throughout the nation. For each hour a wormhole is open, the shock troops successfully steal one bear from the surrounding area. As the owner of the only bear-optimized cargo airlift helicopter in the country, you have been called upon to rescue as many bears from the invaders as possible. Your own experimental wormhole technology will allow you to immediately deploy to any park, but only once. From there you must travel between parks by air, while the clock ticks and bears are stolen. You will be working around the clock to save as many bears as possible, until all bears are either rescued or stolen.
+Bear-stealing shock troops have begun pouring through wormholes in major parks throughout the nation. For each hour a wormhole is open, the shock troops successfully steal one bear from the surrounding area. As the owner of the only bear-optimized cargo airlift helicopter in the country, you have been called upon to rescue as many bears from the invaders as possible.
+
+Your own experimental wormhole technology will allow you to immediately deploy to any park, but only once. From there you must travel between parks by air, while the clock ticks and bears are stolen. You will be working around the clock to save as many bears as possible, until all bears are either rescued or stolen.
 
 ## Input Format
 
@@ -15,17 +17,17 @@ The second line consists of **N** integers, the number of bears initially in eac
 
 The remaining **M** lines consist of three integers each:
 
-* The first park **u_i** connected by the corridor.
-* The second park **v_i** connected by the corridor.
-* The number of hours **t_i** it will take to traverse that corridor.
+* The first park **U<sub>i</sub>** connected by the corridor.
+* The second park **V<sub>i</sub>** connected by the corridor.
+* The number of hours **T<sub>i</sub>** it will take to traverse that corridor.
 
 All corridors are two-way with an equal cost in both directions. No two parks will have multiple corridors directly between them.
 
 ## Constraints
 
-1 ≤ **N** ≤ 64  
-0 ≤ **M** ≤ 64  
-1 ≤ **t_i** ≤ 12
+* 1 ≤ **N** ≤ 64
+* 0 ≤ **M** ≤ 64
+* 1 ≤ **T<sub>i</sub>** ≤ 12
 
 ## Output Format
 
@@ -66,7 +68,12 @@ The input represents the following graph:
 (4) [7]--6--[9] (3)
 ```
 
-There are 7 + 5 + 7 + 9 = **28** total bears. The optimal bear recovery path is `[7]--2->[7]--1->[5]--4->[9]`, which will save 7 bears at the deployment park, then 5 bears (7 - 2), then 2 bears (5 - 2 - 1), then 2 bears (9 - 2 - 1 - 4), for a total of 7 + 5 + 2 + 2 = **16** bears saved.
+There are 7 + 5 + 7 + 9 = **28** total bears. The optimal bear recovery path is `[7]--2->[7]--1->[5]--4->[9]`
 
-The deployment park of the best path is park 4, saving 16 bears from a total of 28, so the output is `4 16 12`.
+* Deploying at park 4 will save 7 bears immediately.
+* Flying to park 1 will take 2 hours, and will save 7 - 2 = **5** bears.
+* Flying to park 2 will take 1 hour, for a total of 3, and will save 5 - 3 = **2** bears.
+* Flying to park 3 will take 4 hours, for a total of 7, and will save 9 - 7 = **2** bears.
+
+A total of 7 + 5 + 2 + 2 == **16** beras were saved out of 28, and our deployment park was park 4, so the output is `4 16 12`.
 
