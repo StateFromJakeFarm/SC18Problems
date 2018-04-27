@@ -9,8 +9,6 @@ Lauren has a chart of distinct projected prices for a house over the next __*n*_
 
 Find and print the _minimum_ amount of money Lauren must lose if she buys the house and resells it within the next __*n*__ years.
 
-_Note_: It's guarenteed that a valid answer exists.
-
 ## Input Format
 
 The first line contains an integer __*n*__, denoting the number of years of house data.
