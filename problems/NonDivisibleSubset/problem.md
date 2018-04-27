@@ -17,6 +17,10 @@ The second line contains __*n*__ space-separated integers describing __*S<sub>i<
 - 1 ≤ __*S<sub>i</sub>*__ ≤ 10<sup>9</sup>
 - All __*S<sub>i</sub>*__ are distinct.
 
+## Output Format
+
+The output should consist of the answer as a single integer.
+
 ## Sample Input
 ```
 4 3

@@ -36,7 +36,7 @@ For each test case, print a single line with an integer denoting the maximum num
 3 2 2
 ```
 
-## Sample Output
+### Sample Output
 ```
 10
 ```

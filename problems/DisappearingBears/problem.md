@@ -50,13 +50,13 @@ If two different deployment points could save the most bears, print the one with
 4 1 2
 ```
 
-## Sample Output
+### Sample Output
 
 ```
 4 16 12
 ```
 
-## Explanation
+### Explanation
 
 The input represents the following graph:
 

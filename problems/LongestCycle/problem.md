@@ -28,7 +28,7 @@ Print a single integer, the length of the longest cycle followed by a newline.
 4 5
 ```
 
-## Sample Output
+### Sample Output
 ```
 6
 ```

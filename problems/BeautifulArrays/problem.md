@@ -26,12 +26,12 @@ Print the minimum number of swaps that should be performed in order to make the 
 2 5 3 1
 ```
 
-## Sample Output
+### Sample Output
 
 ```
 2
 ```
 
-## Explanation
+### Explanation
 
 Let's define array __*B* = [1,2,3,5]__ to be the beautiful reordering of array __*A*__, as the sum of the absolute values of differences between adjacent elements is minimal among all permutations and only two swaps (__1__ with __2__ and then __2__ with __5__) were performed.

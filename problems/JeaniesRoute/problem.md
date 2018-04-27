@@ -31,7 +31,7 @@ Print the minimum distance Jeanie must travel to deliver all **_K_** letters.
 3 5 3
 ```
 
-## Sample Output
+### Sample Output
 ```
 6
 ```

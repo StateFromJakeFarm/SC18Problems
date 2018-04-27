@@ -44,7 +44,7 @@ For each pair of addresses **a** and **b**, print out a single line containing a
 1 4
 ```
 
-## Sample Output
+### Sample Output
 
 ```text
 5
