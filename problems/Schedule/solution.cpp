@@ -46,7 +46,13 @@ int main() {
             }
         }
         stable_sort(local.begin(), local.end(), [](Event* a, Event* b) {
-            return a->start < b->start || a->end < b->end;
+            if (a->start < b->start) {
+                return true;
+            } else if (a->start == b->start) {
+                return a->end < b->end;
+            } else {
+                return false;
+            }
         });
         for (auto event : local) {
             cout << sep << event->name;
