@@ -14,7 +14,7 @@ The next ***N*** lines each consist of two timestamps in the format `hh:mm` deno
 
 The next ***M*** lines each consist of one timestamp in the format `hh:mm` denoting the time to query.
 
-## Constraints
+## Constraints 
 
 - 1 &le; ***N*** &le; 1,000
 - 1 &le; ***M*** &le; 1,000
@@ -27,7 +27,7 @@ Print ***M*** lines of output, each with the answer to a single query. Each answ
 
 ## Sample Input
 ```
-3 4
+3 3
 00:00 11:59 All-Morning Monster Mash
 11:30 12:29 Lunch with John Malkovich
 17:00 23:59 Nap time
