@@ -19,7 +19,7 @@ The second line contains __*n*__ space-seperated integers describing the values 
 
 ## Output Format
 
-Print a single integer denoting the value that occurs most frequently in the array. If two values are tied for most frequent occurance, print the one with the lower value.
+Print a single integer denoting the value that occurs most frequently in the array. If two values are tied for most frequent occurrence, print the one that is smaller.
 
 ## Sample Input
 ```

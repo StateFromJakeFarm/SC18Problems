@@ -2,10 +2,10 @@
 
 ---
 
-Gary is a avid hiker. He tracks his hikes meticulously, paying attention to the smallest details. During his last hike he took exactly __*n*__ steps. For every step he took, he noted if it was an uphill, U, or a downhill, D, step. Gary's hike started and ended at sea level, and each step up or down represents a 1 unit change in altitude. Also, consider the following defintions:
+Gary is a avid hiker. He tracks his hikes meticulously, paying attention to the smallest details. During his last hike he took exactly __*n*__ steps. For every step he took, he noted if it was an uphill, U, or a downhill, D, step. Gary's hike started and ended at sea level, and each step up or down represents a 1 unit change in altitude. Also, consider the following definitions:
 
-- A mountain is a sequence of steps above sea level, begining with a step up from sea level, and ending with a step down to sea level.
-- A valley is a sequence of steps below sea level, begining with a step down from sea level, and ending with a step up to sea level. 
+- A mountain is a sequence of steps above sea level, beginning with a step up from sea level, and ending with a step down to sea level.
+- A valley is a sequence of steps below sea level, beginning with a step down from sea level, and ending with a step up to sea level. 
 
 Given Gary's sequence of steps during his last hike, find the number of valleys he traveled through. 
 

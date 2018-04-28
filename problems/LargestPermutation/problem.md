@@ -8,7 +8,7 @@ You are given an array of the first __*N*__ natural numbers, in an unknown order
 
 The first line of the input contains two integers, __*N*__ and __*K*__, the size of the input array and the maximum swaps you can make, respectively. The second line contains some permutation of the first __*N*__ natural numbers.
 
-## Constaints
+## Constraints
 
 - 1 ≤ __*N*__ ≤ 10<sup>5</sup>
 - 1 ≤ __*K*__ ≤ 10<sup>9</sup>

@@ -42,7 +42,7 @@ Print the number of ways to divide the kingdom such that the siblings will not i
 
 ### Explanation
 
-In the diagrams below, square-shaped cities are ruled by Betty and cicurlar cities are ruled by Reggie. These diagrams show the four valid ways to divide the kingdom peacefully.
+In the diagrams below, square-shaped cities are ruled by Betty and circular cities are ruled by Reggie. These diagrams show the four valid ways to divide the kingdom peacefully.
 
 ![](ExplanationDiagram.png)
 

@@ -10,7 +10,7 @@ However, the speed of each cashier varies, each cashier takes __*S<sub>k</sub>*_
 
 Alice notices that the cashiers don't work at the same speed, and gets curious about what order the customers will leave in.
 
-When the line first forms, the first customer goes to cashier 1, the second to cashier 2, and so on. From then on, the customer at the front of the line simply moves to a cashier as one becomes availible. If two or more customers would finish at the same time, assume they finish in the same order they arrived in.
+When the line first forms, the first customer goes to cashier 1, the second to cashier 2, and so on. From then on, the customer at the front of the line simply moves to a cashier as one becomes available. If two or more customers would finish at the same time, assume they finish in the same order they arrived in.
 
 Given __*N*__, the number of customers, __*K*__, the number of cashiers, and the time it takes for each cashier to finish, __*S<sub>k</sub>*__, find the order that the customers will leave in. 
 
@@ -33,7 +33,7 @@ The third line contains __*K*__ space-separated integers, denoting the time it t
 
 ## Output Format
 
-Print __*K*__ integers seperated by spaces. Each integer represents the position that a person was in from the original line, and they should be printed in the order the customers leave in.
+Print __*K*__ integers separated by spaces. Each integer represents the position that a person was in from the original line, and they should be printed in the order the customers leave in.
 
 ## Sample Input
 
@@ -53,7 +53,7 @@ Print __*K*__ integers seperated by spaces. Each integer represents the position
 
 There are seven customers and three cashiers. The first three customers pair off with their respective cashiers.
 
-After two minutes, cashier 2 finishes, so customer 2 leaves, and cashier 2 starts with the next person in line, customer 4. Cashier 1 has two minutes of work left, and cashier 3 has 5 minutes of work left.
+After two minutes, cashier 2 finishes, so customer 2 leaves, and cashier 2 starts with the next person in line, customer 4. Cashier 1 has two minutes of work left, and cashier 3 has five minutes of work left.
 
 After two more minutes cashier 1 and cashier 2 both finish. Because customer 1 arrived first, they leave first, and cashier 1 takes customer 5 from the line. Then customer 4 leaves, and cashier 2 takes customer 6. Cashier 3 still has three minutes of work left.
 
