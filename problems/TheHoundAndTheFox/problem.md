@@ -12,14 +12,14 @@ Given the distance the fox starts ahead of the dog, __*d*__, the speed of both, 
 
 The first line contains a single integer __*d*__ the distance the fox is ahead at the start of the chase.
 
-The second line contains two space-seperated integers __*S<sub>dog</sub>, S<sub>fox</sub>*__ the speed of the dog and the fox. 
+The second line contains two space-seperated integers __*S<sub>dog</sub>*__, __*S<sub>fox</sub>*__ the speed of the dog and the fox. 
 
-The third line contains two space-seperated integers, __*n*__ the time between obstacles, and __*t*__ the time spent by the dog on each obstacle. 
+The third line contains two space-seperated integers: __*n*__, the time between obstacles; and __*t*__, the time spent by the dog on each obstacle. 
 
 ## Constraints
 
 - 0 ≤ __*d*__ ≤ 1,000
-- 0 ≤ __*S<sub>dog</sub>, S<sub>fox</sub>*__ ≤ 100
+- 0 ≤ __*S<sub>dog</sub>*__, __*S<sub>fox</sub>*__ ≤ 100
 - 1 ≤ __*n*__ ≤ 50
 - 0 ≤ __*t*__ ≤ 50
 
@@ -27,7 +27,7 @@ The third line contains two space-seperated integers, __*n*__ the time between o
 
 If the dog will catch the fox, print a single integer denoting the number of seconds it will take until they meet.
 
-If the dog will not catch the fox, print the string "Never"
+If the dog will not catch the fox, print the string "Never".
 
 ## Sample Input
 ```
