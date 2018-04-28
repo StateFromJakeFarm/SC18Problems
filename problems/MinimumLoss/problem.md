@@ -1,7 +1,4 @@
 # Minimum Loss
-
----
-
 Lauren has a chart of distinct projected prices for a house over the next __*n*__ years, where the price of the house in the __*i<sup>th</sup>*__ year is __*p<sub>i</sub>*__. She wants to purchase and resell the house at a minimal *loss* according to the following rules:
 
 * The house cannot be sold at a price greater than or equal to the price it was purchased at (i.e., it must be resold at a loss).
@@ -38,15 +35,3 @@ Print a single integer denoting the minimum amount of money Lauren must lose if 
 
 ### Explanation
 Lauren buys the house in year 1 at price __*p<sub>1</sub>*__ = 5 and sells it in year 3 at __*p<sub>3</sub>*__ = 3 for a minimal loss of 5 - 3 = 2.
-
-## Sample Input 1
-```
-5
-20 7 8 2 5
-```
-### Sample Output
-```
-2
-```
-### Explanation
-Lauren buys the house in year 2 at price __*p<sub>2</sub>*__ = 7 and sells it in year 5 at __*p<sub>5</sub>*__ = 5 for a minimal loss of 7 - 5 = 2.

@@ -1,7 +1,4 @@
 # Sir Pinski's Triangle
-
----
-
 The brave knight Sir Pinski likes to doodle in his off time. His squire Dan has
 noticed an interesting pattern in one of his more recent designs, a
 self-similar triangular shape. Dan believes that Sir Pinski's triangle may also
@@ -49,7 +46,7 @@ the pattern is filled in and spaces where it is not.
 ## Sample Input
 
 ```
-11
+5
 ```
 
 ### Sample Output
@@ -60,16 +57,4 @@ the pattern is filled in and spaces where it is not.
 * *
 ****
 *   *
-**  **
-* * * *
-********
-*       *
-**      **
-* *     * *
 ```
-
-### Explanation
-
-The first **11** lines of Sir Pinski's triangle have been printed according to
-the pattern described.
-

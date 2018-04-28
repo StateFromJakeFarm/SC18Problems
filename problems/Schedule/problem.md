@@ -1,7 +1,4 @@
 # Let Me Check My Schedule
-
----
-
 Maximillian is a busy guy. To waste less time, he wants to improve the speed with which he can check what appointments or events overlap a given time slot, so he can decide which is more important to attend.
 
 Accept an input representing the events on Maximillian's radar for a day and the times he's most concerned about, and for each time produce the names of the events. Event start and end times are both *inclusive*, so a query for a time should include events which start or end at exactly that time.
@@ -35,7 +32,7 @@ Print ***M*** lines of output, each with the answer to a single query. Each answ
 12:30
 18:00
 ```
-### Sample Output
+## Sample Output
 ```  
 11:45 All-Morning Monster Mash, Lunch with John Malkovich
 12:30 Nothing

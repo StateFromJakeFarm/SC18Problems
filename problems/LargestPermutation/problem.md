@@ -1,7 +1,4 @@
 # Largest Permutation
-
----
-
 You are given an array of the first __*N*__ natural numbers, in an unknown order. You can swap any two elements of the array. You can make at most __*K*__ swaps. What is the largest permutation, in numerical order, that you can make?
 
 ## Input Format
@@ -40,15 +37,3 @@ The maximum permutation that can be made with a single swap is the swap of 4 and
 ```
 ### Explanation
 With 1 swap we can get [1,2,3],[3,1,2], or [2,3,1]. Of those [3,1,2] is the largest permutation.
-
-## Sample Input 2
-```
-2 1
-2 1
-```
-### Sample Output
-```
-2 1
-```
-### Explanation
-We can see that [2,1] is already largest possible permutation. Therefore we don't need any swaps.

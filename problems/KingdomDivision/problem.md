@@ -39,11 +39,3 @@ Print the number of ways to divide the kingdom such that the siblings will not i
 ```
 4
 ```
-
-### Explanation
-
-In the diagrams below, square-shaped cities are ruled by Betty and circular cities are ruled by Reggie. These diagrams show the four valid ways to divide the kingdom peacefully.
-
-![](ExplanationDiagram.png)
-
-We then print the value of 4 mod (10<sup>9</sup> + 7) = 4 as our answer.
