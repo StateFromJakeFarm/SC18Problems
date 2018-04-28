@@ -68,12 +68,12 @@ The input represents the following graph:
 (4) [7]--6--[9] (3)
 ```
 
-There are 7 + 5 + 7 + 9 = **28** total bears. The optimal bear recovery path is `[7]--2->[7]--1->[5]--4->[9]`
+There are 7 + 5 + 7 + 9 = **28** total bears. The optimal bear recovery path is `[7]--2->[7]--1->[5]--4->[9]`:
 
 * Deploying at park 4 will save 7 bears immediately.
 * Flying to park 1 will take 2 hours, and will save 7 - 2 = **5** bears.
 * Flying to park 2 will take 1 hour, for a total of 3, and will save 5 - 3 = **2** bears.
 * Flying to park 3 will take 4 hours, for a total of 7, and will save 9 - 7 = **2** bears.
 
-A total of 7 + 5 + 2 + 2 == **16** beras were saved out of 28, and our deployment park was park 4, so the output is `4 16 12`.
+A total of 7 + 5 + 2 + 2 == **16** bears were saved out of 28, and our deployment park was park 4, so the output is `4 16 12`.
 

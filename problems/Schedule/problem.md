@@ -22,9 +22,11 @@ The next ***M*** lines each consist of one timestamp in the format `hh:mm` denot
 
 Print ***M*** lines of output, each with the answer to a single query. Each answer should be the queried time followed by a comma-separated list of the event names which overlap that time, or "`Nothing`" if no events overlap that time.
 
+Events in each line should be ordered such that earlier-starting events are printed earlier. If two events start at the same time, the one with the earlier end time should be printed earlier. If two events start and end at the same time, the one listed earlier in the input should be printed earlier.
+
 ## Sample Input
 ```
-3 4
+3 3
 00:00 11:59 All-Morning Monster Mash
 11:30 12:29 Lunch with John Malkovich
 17:00 23:59 Nap time
