@@ -4,7 +4,7 @@
 
 Maximillian is a busy guy. To waste less time, he wants to improve the speed with which he can check what appointments or events overlap a given time slot, so he can decide which is more important to attend.
 
-Accept an input representing the events on Maximillian's radar for a day and the times he's most concerned about, and for each time produce the names of the events. Event start and end times are both *inclusive*, so a query for a time should still include events which end at exactly that time.
+Accept an input representing the events on Maximillian's radar for a day and the times he's most concerned about, and for each time produce the names of the events. Event start and end times are both *inclusive*, so a query for a time should include events which start or end at exactly that time.
 
 ## Input Format
 
@@ -16,8 +16,8 @@ The next ***M*** lines each consist of one timestamp in the format `hh:mm` denot
 
 ## Constraints
 
-- 1 &le; ***N*** &le; ????
-- 1 &le; ***M*** &le; ????
+- 1 &le; ***N*** &le; 1,000
+- 1 &le; ***M*** &le; 1,000
 - `00` &le; `hh` &le; `23`
 - `00` &le; `mm` &le; `59`
 
