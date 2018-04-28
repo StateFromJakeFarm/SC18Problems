@@ -1,0 +1,3 @@
+t01-t03 handwritten
+t04-t19 randomly generated, fast completion (<3s)
+t20-t23 randomly generated, slow completion (~25s)
