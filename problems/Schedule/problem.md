@@ -14,7 +14,7 @@ The next ***N*** lines each consist of two timestamps in the format `hh:mm` deno
 
 The next ***M*** lines each consist of one timestamp in the format `hh:mm` denoting the time to query.
 
-## Constraints 
+## Constraints
 
 - 1 &le; ***N*** &le; 1,000
 - 1 &le; ***M*** &le; 1,000
@@ -24,6 +24,8 @@ The next ***M*** lines each consist of one timestamp in the format `hh:mm` denot
 ## Output Format
 
 Print ***M*** lines of output, each with the answer to a single query. Each answer should be the queried time followed by a comma-separated list of the event names which overlap that time, or "`Nothing`" if no events overlap that time.
+
+Events in each line should be ordered such that earlier-starting events are printed earlier. If two events start at the same time, the one with the earlier end time should be printed earlier. If two events start and end at the same time, the one listed earlier in the input should be printed earlier.
 
 ## Sample Input
 ```

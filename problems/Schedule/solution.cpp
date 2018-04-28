@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <vector>
 #include <string>
+#include <algorithm>
 
 using namespace std;
 
@@ -24,7 +25,6 @@ int main() {
     cin >> num_events >> num_queries;
 
     vector<Event> events;
-
     for (int i = 0; i < num_events; ++i) {
         string event;
         int start = readtime();
@@ -39,11 +39,18 @@ int main() {
         int time = readtime();
         cout << setw(2) << (time / 60) << ":" << setw(2) << (time % 60) << " ";
         const char* sep = "";
+        vector<Event*> local;
         for (auto& event : events) {
             if (event.start <= time && time <= event.end) {
-                cout << sep << event.name;
-                sep = ", ";
+                local.push_back(&event);
             }
+        }
+        stable_sort(local.begin(), local.end(), [](Event* a, Event* b) {
+            return a->start < b->start || a->end < b->end;
+        });
+        for (auto event : local) {
+            cout << sep << event->name;
+            sep = ", ";
         }
         if (!*sep) {
             cout << "Nothing";
